@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let f1=(n)=>{
+            let n1=[0,1];
+          
+            for(let i=2;i<=n;i++){
+              n1[i] =n1[i-1]+n1[i-2];
+            }
+            return n1;
+
+        }
+        let n=5;
+        let res=f1(n);
+        document.write(res.join(","));
+    </script>
+</body>
+</html>

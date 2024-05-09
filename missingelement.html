@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let f1=(arr)=>{
+            let n=arr.length+1;
+            let sum=((n*(n+1))/2);
+            let arrsum=0;
+            for(let i=0;i<arr.length;i++){
+                
+                arrsum=arrsum+arr[i];
+            }
+            return sum-arrsum;
+        }
+        let arr=[1,2,3,4,6];
+        let res=f1(arr);
+        document.write(res);
+    </script>
+</body>
+</html>
